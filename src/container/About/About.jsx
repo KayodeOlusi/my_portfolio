@@ -1,7 +1,7 @@
 import "./About.scss";
 import { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
@@ -43,4 +43,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
