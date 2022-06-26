@@ -104,6 +104,10 @@
   height: 100%;
   margin-left: 1rem;
 
+  .app__header-circles::-webkit-scrollbar {
+    display: none;
+  }
+
   div {
     width: 100px;
     height: 100px;
