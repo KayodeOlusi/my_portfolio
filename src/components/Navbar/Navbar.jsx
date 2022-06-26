@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const items = ["home", "about", "works", "skills", "contact"];
+  const items = ["home", "about", "work", "skills", "contact"];
 
   const handleOnClick = (e) => {
     e.stopPropagation();
