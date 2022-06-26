@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import { useState, useEffect, Fragment } from "react";
+import { useState, Fragment } from "react";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
@@ -18,7 +18,9 @@ const Footer = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
+    if (!formData) return;
+
     setLoading(true);
 
     const contact = {
