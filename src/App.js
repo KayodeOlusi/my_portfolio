@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import {
   About,
   Skills,
@@ -11,7 +11,7 @@ import { Navbar } from "./components";
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       <Navbar />
       <Header />
       <About />
@@ -19,7 +19,7 @@ function App() {
       <Skills />
       <Testimonial />
       <Footer />
-    </div>
+    </main>
   );
 }
 
