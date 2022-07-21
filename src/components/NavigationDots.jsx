@@ -1,5 +1,5 @@
 const NavigationDots = ({ active }) => {
-  const items = ["home", "about", "works", "skills", "contact"];
+  const items = ["home", "about", "work", "skills", "contact"];
 
   return (
     <div className="app__navigation">

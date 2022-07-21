@@ -16,7 +16,7 @@ const About = () => {
   return (
     <Fragment>
       <h2 className="head-text">
-        I Know That <span>Good Applications </span> <br /> means{" "}
+        <span>Good Applications </span> <br /> means{" "}
         <span>Good Business</span>
       </h2>
 
